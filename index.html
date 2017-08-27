@@ -1,0 +1,136 @@
+<html>
+
+<head>
+    <base href="/eComm/">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <!--library-->
+    <script src="js/library/angular.min.js"></script>
+    <script src="js/library/1.5.0_angular-route.js"></script>
+    <script src="js/library/1.5.0_angular-animate.js"></script>
+    <script src="js/library/1.0.0_angular-ui-router.min.js"></script>
+    <script src="js/library/ui-bootstrap-tpls-1.1.2.js"></script>
+    <script src="js/library/angular-modal-service.js"></script>
+    <script src="js/library/angular-messages.min.js"></script>
+    <script src="js/library/underscore-min.js"></script>
+    <!--APP LOAD-->
+    <script src="js/app.js"></script>
+    <!--SERVICES-->
+</head>
+
+<body ng-app="myApp">
+    <div class="toggle_menu">
+        <a type="button" class="navbar collapsed" data-toggle="collapse">
+            <i class="glyphicon glyphicon-menu-hamburger"></i>
+        </a>
+    </div>
+    <div class="sidebar_menu">
+        <i class="glyphicon glyphicon-remove close_icon"></i>
+        <center class="sidebar_nav">
+            <span class="sidebar_brand"><a href="#"><h1 class="boxed_item">Lorem <span class="logo_bold">Ipsum</span></h1>
+            </a>
+        </center>
+        <ul class="sidebar_nav navbar-fixed">
+            <li class="sidebar_item"><a class="bg_home nav_pad" ui-sref="public.home">Home</a></li>
+            <li class="sidebar_item"><a class="bg_news" ui-sref="public.news">News</a></li>
+            <li class="sidebar_item"><a class="bg_gadgets" ui-sref="public.gadgets">Gadgets</a></li>
+            <li class="sidebar_item"><a class="bg_girls" ui-sref="public.other">Girls</a></li>
+            <li class="sidebar_item"><a class="bg_boys" ui-sref="public.other">Boys</a></li>
+            <li class="sidebar_item"><a class="bg_women" ui-sref="public.other">Women</a></li>
+            <li class="sidebar_item"><a class="bg_men" ui-sref="public.other">Men</a></li>
+            <li class="sidebar_item"><a class="bg_accessories" ui-sref="public.Accessories">Accessories</a></li>
+            <li class="sidebar_item"><a class="bg_contact" ui-sref="public.contact">Contact</a></li>
+        </ul>
+        <center>
+            <a href="#"></a>
+        </center>
+    </div>
+    <div class="content">
+        <!--TO DELETE IF NOT NEEDED-->
+        <ui-view>
+            <div class="container padd">
+                <div class="center"><span class="boxed_text"><h1>Lorem Ipsum</h1></span></div>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In a mi sollicitudin, luctus magna vel, feugiat quam. Nullam ullamcorper tortor ac lectus lobortis eleifend. Duis eu elementum enim. Ut aliquam lobortis mauris eget sollicitudin. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec a odio ipsum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nulla quis risus sit amet leo porta fringilla. Curabitur finibus nulla quis rhoncus facilisis. Praesent at lobortis leo, eget bibendum augue. Curabitur at purus nisl. Vestibulum dapibus risus vel ipsum consequat, et pulvinar lorem elementum. Donec massa ante, egestas at velit euismod, maximus rutrum nisl. Cras vel dictum ligula. Nullam mauris nibh, maximus a turpis non, tincidunt fermentum sapien.
+                </p>
+                <p>
+                    Nam odio nibh, auctor tempor turpis ut, tincidunt ultricies tortor. Donec massa nunc, sagittis id nunc sed, consectetur congue lectus.
+                </p>
+                <div class="row lr">
+                    <div class="col-md-12">
+                        <div class="col-md-3 col-md-offset-2">
+                            <span><a href="#" class="btn btn-lg btn-prot center-block" role="button">Lorem</a></span>
+                        </div>
+                        <div class="col-md-3 col-md-offset-2">
+                            <span><a href="#" class="btn btn-lg btn-prot center-block" role="button">Ipsum</a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 no_margin_left bg_w21 lr">
+                    <span class="pull-right">
+                    <span class="title_sz lighttxt mrg_txt_btm pull-right">Girls</span></br><span class="title_sz boldtxt">Women</span>
+                    </span>
+                </div>
+                <div class="col-md-4 bg_gadgets lr">
+                    <span class="pull-right">
+                    <span class="title_sz lighttxt mrg_txt_btm pull-right">Gadgets</span></br><span class="title_sz boldtxt">Accessories</span>
+                    </span>
+                </div>
+                <div class="col-md-4 no_margin_right bg_m11 lr">
+                    <span class="pull-right">
+                    <span class="title_sz lighttxt mrg_txt_btm pull-right">Boys</span></br><span class="title_sz boldtxt">Men</span>
+                    </span>
+                </div>
+            </div>
+        </ui-view>
+    </div>
+    <div class="container_dark_grey footer">
+        <div class="row">
+            <div class="col-md-3 col-md-offset-1">
+                <div class="footer_middle">
+                    <a href="#">Contact Us</a></br>
+                    <a href="#">Search Stores</a></br>
+                    <a href="#">Q&#38;As</a></br>
+                    <a href="#">Help</a></br>
+                </div>
+            </div>
+            <div class="col-md-2 lr col-md-offset-1">
+                <a href="#">
+                    <h1 class="boxed_item">Lorem <span class="logo_bold">Ipsum</span></h1>
+                </a>
+            </div>
+            <div class="col-md-3 col-md-offset-2">
+                <div class="footer_middle">
+                    <span>
+                    <a href="https://www.facebook.com/" class="footer_space"><img src="images/icons/Facebook20.png" title="Facebook"> : www.facebook.com/lorem.ipsum</a>
+                    </br>
+                    <a href="#" class="footer_space"><img src="images/icons/Twitter20.png" title="Twitter"> : www.twitter.com/lorem.ipsum</a>
+                    </br>
+                    <a href="#" class="footer_space"><img src="images/icons/Instagram20.png" title="Instagram"> : Lorem.Ipsum</a>
+                    </br>
+                    <a href="#" class="footer_space"><img src="images/icons/Mail20.png" title="Gmail"> : lorem.ipsum@loremipsum.org</a>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="center">
+            Copyright&copy;2016.
+        </div>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $(".toggle_menu").click(function() {
+            $(".sidebar_menu").addClass("show_menu");
+            $(".toggle_menu").addClass("opacity_zero");
+        });
+        $(".close_icon").click(function() {
+            $(".sidebar_menu").removeClass("show_menu");
+            $(".toggle_menu").removeClass("opacity_zero");
+        });
+    })
+    </script>
+</body>

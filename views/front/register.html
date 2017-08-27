@@ -1,0 +1,111 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+</head>
+
+<body>
+        <div class="toggle_menu">
+        <a type="button" class="navbar collapsed" data-toggle="collapse">
+            <i class="glyphicon glyphicon-menu-hamburger"></i>
+        </a>
+    </div>
+    <div class="sidebar_menu">
+        <i class="glyphicon glyphicon-remove close_icon"></i>
+        <center class="sidebar_nav">
+            <span class="sidebar_brand"><a href="#"><h1 class="boxed_item">Lorem <span class="logo_bold">Ipsum</span></h1>
+            </a>
+            </span>
+        </center>
+        <ul class="sidebar_nav navbar-fixed">
+            <li class="sidebar_item"><a class="bg_home nav_pad" href="#">Home</a></li>
+            <li class="sidebar_item"><a class="bg_news" href="#">News</a></li>
+            <li class="sidebar_item"><a class="bg_gadgets" href="#">Gadgets</a></li>
+            <li class="sidebar_item"><a class="bg_girls" href="#">Girls</a></li>
+            <li class="sidebar_item"><a class="bg_boys" href="#">Boys</a></li>
+            <li class="sidebar_item"><a class="bg_women" href="#">Women</a></li>
+            <li class="sidebar_item"><a class="bg_men" href="#">Men</a></li>
+            <li class="sidebar_item"><a class="bg_accessories" href="#">Accessories</a></li>
+            <li class="sidebar_item"><a class="bg_contact" href="#">Contact</a></li>
+        </ul>
+    </div>
+
+    <div class="content">
+        <!--TO DELETE IF NOT NEEDED-->
+        <div class="center">
+        	<h1 class="page_title">Sign Up</h1>
+            <h6 class="mr">Create your account</br>
+            Already have one? <a href="login.html">Log in</a>.
+            </h6>
+        </div>
+        <div class="row mr">
+        	<div class="col-lg-4 col-md-4 col-sm-4 col-xs-10 col-lg-offset-4 col-md-offset-4 col-sm-offset-4 col-xs-offset-1">
+	            <form ng-submit="signup()" method="POST" class="center" ng-hide="signedup">
+                    <div class="input-group input-group-lg fullwidth mrg">
+                        <input type="text" class="form-control" placeholder="First name" ng-model="user.username.firstname"></input>
+                    </div>
+                    <div class="input-group input-group-lg fullwidth mr">
+                        <input type="text" class="form-control" placeholder="Last name" ng-model="user.username.lastname"></input>
+                    </div>
+                    <div class="input-group input-group-lg fullwidth mr">
+                        <input type="email" class="form-control" placeholder="E-mail" ng-model="user.email"></input>
+                    </div>
+                    <div class="input-group input-group-lg fullwidth mr">
+                        <input type="password" class="form-control" placeholder="Password" ng-model="user.password"></input>
+                    </div>
+                    <div class="input-group input-group-lg fullwidth mr">
+                        <input type="password" class="form-control" placeholder="Confirm Password" ng-model="user.cpassword"></input>
+                    </div>
+                    <button type="submit" class="btn btn-prot btn-lg halfwidth btm">Register</button>
+                </form>
+	        </div>
+		</div>
+    </div>
+    <div class="container_dark_grey footer">
+	    <div class="row">
+	        <div class="col-md-3 col-md-offset-1">
+	            <div class="footer_middle">
+	                <a href="#">Contact Us</a></br>
+	                <a href="#">Search Stores</a></br>
+	                <a href="#">Q&#38;As</a></br>
+	                <a href="#">Help</a></br>
+	            </div>
+	        </div>
+	        <div class="col-md-2 lr col-md-offset-1" <a href="#">
+	            <h1 class="boxed_item">Lorem <span class="logo_bold">Ipsum</span></h1>
+	            </a>
+	        </div>
+	        <div class="col-md-3 col-md-offset-2">
+	            <span>
+	            </br>
+	            <a href="https://www.facebook.com/" class="footer_space"><img src="images/icons/Facebook20.png" title="Facebook"> : www.facebook.com/lorem.ipsum</a></span></br>
+	            <a href="#" class="footer_space"><img src="images/icons/Twitter20.png" title="Twitter"> : www.twitter.com/lorem.ipsum</a>
+	            </br>
+	            <a href="#" class="footer_space"><img src="images/icons/Instagram20.png" title="Instagram"> : Lorem.Ipsum</a>
+	            </br>
+	            <a href="#" class="footer_space"><img src="images/icons/Mail20.png" title="Gmail"> : lorem.ipsum@loremipsum.org</a>
+	            <span>
+	        </div>
+	    </div>
+	    <div class="center"> 
+	    	Copyright&copy;2016.
+		</div>
+	</div>
+	<script>
+    $(document).ready(function() {
+        $(".toggle_menu").click(function() {
+            $(".sidebar_menu").addClass("show_menu");
+            $(".toggle_menu").addClass("opacity_zero");
+            $(".content, .footer").addClass("mrgn_menu");
+        });
+        $(".close_icon").click(function() {
+            $(".sidebar_menu").removeClass("show_menu");
+            $(".toggle_menu").removeClass("opacity_zero");
+			$(".content, .footer").removeClass("mrgn_menu");
+        });
+    })
+    </script>
+</body>
